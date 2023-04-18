@@ -19,7 +19,7 @@ function Modal({ setCheckShow, setValidate }) {
       password: inputPassword,
       action: "login",
     };
-    fetch(`http://localhost:8000/api/v1/users/login`, {
+    fetch(`https://global-living-backend.vercel.app/api/v1/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
