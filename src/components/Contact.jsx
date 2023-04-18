@@ -48,7 +48,7 @@ function Contact() {
     console.log(checkShow);
   };
   const handleBackIndex = () => {
-    setCheckShow(0);
+    window.location.href = "/signin";
   };
   const handleRegister = (e) => {
     let newUser = {
@@ -226,7 +226,9 @@ function Contact() {
           <button onClick={handleBackIndex} className="btnSuccessBack">
             Tìm hiểu thông tin dự án
           </button>
-          <button className="btnSuccessNext">Xem tài liệu bán hàng</button>
+          <button onClick={handleBackIndex} className="btnSuccessNext">
+            Xem tài liệu bán hàng
+          </button>
         </div>
       </div>
     </div>
