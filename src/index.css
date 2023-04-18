@@ -1,0 +1,762 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+/* Hearder */
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: center;
+}
+.header > img {
+  height: 188px;
+  width: 188px;
+}
+.header > nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.header > nav > li {
+  list-style-type: none;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #efcd7f;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header > nav > li:hover {
+  cursor: pointer;
+}
+
+/* NewsPage */
+.newsPage{
+  width: 100%;
+}
+.newsPage > div:first-child {
+  /* position: relative; */
+  background: url("../public/assits/Rectangle 1.png");
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.newsPage > div:first-child > p:last-child {
+  position: absolute;
+  top: 351px;
+  left: 780px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #efcd7f;
+}
+
+/* Contact */
+.containerContact {
+  background-image: url("../public/assits/Rectangle177.png");
+  background-repeat: no-repeat;
+  height: 942px;
+  width: 1920px;
+  position: relative;
+}
+.containerFormRegister {
+  position: absolute;
+  top: 236px;
+  left: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  width: 674px;
+  height: 527px;
+  background: rgba(0, 0, 0, 0.26);
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f7b531;
+}
+.btnRegister,
+.inputRegister {
+  background: linear-gradient(
+    102.66deg,
+    #ffdb63 31.25%,
+    #f4df9b 66.82%,
+    #fec450 96.93%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.44);
+}
+.inputRegister {
+  width: 507px;
+  height: 51px;
+  margin-bottom: 13px;
+  padding-left: 39px;
+}
+.btnRegister {
+  width: 184px;
+  height: 51px;
+}
+.haveAcc {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  margin-right: 45px;
+}
+.loginNow {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  text-decoration: none;
+  color: #efcd7f;
+  background: transparent;
+  border: none;
+}
+.divLoginNow {
+  display: flex;
+}
+
+/* .containerTextContact{
+  position: absolute;
+
+} */
+.textContact {
+  font-family: "IM FELL Double Pica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 160px;
+  color: rgba(245, 182, 56, 0.31);
+  position: absolute;
+  top: 331px;
+  left: 957px;
+  /* border: 1px solid rgba(255, 205, 41, 0.4); */
+}
+.textRegisterAdvise {
+  font-family: "IM FELL Double Pica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.022em;
+  color: #d7bf7e;
+  position: absolute;
+  top: 454px;
+  left: 1059px;
+  width: 481px;
+  height: 60px;
+}
+.textContentContact {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  width: 708px;
+  height: 147px;
+  color: #ffffff;
+  position: absolute;
+  top: 549px;
+  left: 920px;
+}
+.checkValidate {
+  color: red;
+  font-size: 25px;
+  padding-left: 20px;
+  position: absolute;
+  top: 15px;
+}
+.divInput {
+  position: relative;
+}
+.containerLogin {
+  position: fixed;
+  z-index: 1;
+}
+.modalLogin {
+  background: url("../public/assits/Rectangle129.png");
+  position: relative;
+  width: 1920px;
+  height: 1334px;
+}
+.logoLogin {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 830px;
+  top: -29px;
+}
+.textTitle,
+.checkAcc {
+  position: absolute;
+  width: 1050px;
+  height: 156px;
+  left: 465px;
+  top: 263px;
+  font-family: "IM FELL Double Pica SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #efcd7f;
+}
+.checkAcc {
+  color: red;
+  top: 130px;
+  left: -100px;
+  font-size: 35px;
+}
+.formLogin {
+  position: relative;
+  position: absolute;
+  width: 809px;
+  height: 617px;
+  left: 586px;
+  top: 484px;
+  background: #d9d9d9;
+}
+.divLogin {
+  position: absolute;
+  width: 809px;
+  height: 111px;
+  /* left: 586px;
+top: 484px; */
+  background: linear-gradient(
+    102.66deg,
+    #ffdb63 31.25%,
+    #f4df9b 66.82%,
+    #fec450 96.93%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.textLogin {
+  position: absolute;
+  width: 301px;
+  height: 48px;
+  left: 254px;
+  top: 36px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #000000;
+}
+.iconEmail,
+.iconBlock {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 198px;
+  left: 72px;
+}
+.iconBlock {
+  top: 318px;
+}
+.inputLoginEmail,
+.inputLoginPassword {
+  position: absolute;
+  left: 170px;
+  top: 205px;
+  color: rgba(0, 0, 0, 0.33);
+  width: 83px;
+  height: 60px;
+  width: 600px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.019em;
+  border: none;
+  background-color: #d9d9d9;
+  padding: 20px;
+}
+.inputLoginPassword {
+  top: 320px;
+}
+.btnLogin {
+  position: absolute;
+  width: 874px;
+  height: 111px;
+  left: -29px;
+  top: 450px;
+  background: linear-gradient(
+    102.66deg,
+    #ffdf75 31.25%,
+    #ffeaa6 66.82%,
+    #ffc249 96.93%
+  );
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #000000;
+  border: none;
+}
+.btnBackIndex,
+.btnGoRegister {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 1143px;
+  left: 650px;
+}
+.btnGoRegister {
+  left: 1100px;
+  color: #efcd7f;
+}
+
+.successRegister {
+  position: fixed;
+  width: 1920px;
+  height: 1171px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0);
+}
+.textTitle {
+  position: absolute;
+  width: 1050px;
+  height: 156px;
+  left: 457px;
+  top: 250px;
+
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 68px;
+
+  text-align: center;
+  letter-spacing: -0.019em;
+
+  color: #efcd7f;
+}
+.divNotification {
+  position: absolute;
+  width: 1249px;
+  height: 569px;
+  left: 344px;
+  top: 455px;
+
+  background: linear-gradient(
+    54deg,
+    #e0a23b 0%,
+    #f4ed93 18.23%,
+    #fcb045 51.16%,
+    #f4ed93 82.29%,
+    #e0a23b 99.99%,
+    #f4ed93 100%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.checkMark {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  left: 539px;
+  top: 14px;
+}
+.titleSuccess {
+  position: absolute;
+  width: 576px;
+  height: 81px;
+  left: 366px;
+  top: 187px;
+
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.019em;
+  color: #1e1e1e;
+}
+.textSuccess {
+  position: absolute;
+  width: 570px;
+  height: 87px;
+  left: 339px;
+  top: 277px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #1e1e1e;
+}
+.btnSuccessBack,
+.btnSuccessNext {
+  position: absolute;
+  width: 403px;
+  height: 78px;
+  left: 174px;
+  top: 418px;
+
+  background: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+
+  text-align: center;
+  letter-spacing: -0.019em;
+
+  color: #ffffff;
+}
+.btnSuccessNext {
+  left: 681px;
+}
+
+/* DetailPage */
+.detailPage {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerDetail {
+  /* background-image: url("../public/assits/Rectangle134.png");
+  background-repeat: no-repeat; */
+  position: relative;
+  width: 100%;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerDetail>.header{
+  top: 0;
+  position: absolute;
+  z-index: 4;
+}
+.headerDetail>img:first-child{
+  width: 100%;
+  height: 650px;
+}
+.companyName{
+  position: absolute;
+  z-index: 2;
+  top:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerDetail>div > p:first-child,
+.user-time > p:first-child {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.019em;
+
+  color: #ffffff;
+}
+
+.companyName > p:nth-child(2) {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #efcd7f;
+}
+.user-time {
+  display: flex;
+  gap: 40px;
+}
+.user-time > p:first-child {
+  font-size: 20px;
+  line-height: 30px;
+}
+.timeDetail {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #ffffff;
+}
+.detailPage > div:nth-child(2) {
+  /* background-color: aqua; */
+  width: 80%;
+}
+.detailPage > div > select {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #ffbf40;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  border-radius: 15px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+/* DetailContent */
+.detailContent {
+  margin: 0 auto;
+  color: #ffffff;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  
+}
+
+.detailContent > div > button {
+  width: 259px;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid #f7b531;
+  border-radius: 30px;
+}
+.detailContent > div > button:last-child {
+  background: linear-gradient(
+    54deg,
+    #e0a23b 0%,
+    #f4ed93 18.23%,
+    #fcb045 51.16%,
+    #f4ed93 82.29%,
+    #e0a23b 99.99%,
+    #f4ed93 100%
+  );
+  box-shadow: 0px 4px 4px rgba(213, 210, 210, 0.25);
+}
+.detailBtns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.detailBtns>button:first-child{
+  color: white;
+}
+.relatedNews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.relatedNews > p:first-child {
+  font-family: "IM FELL Double Pica SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: #efcd7f;
+}
+.relatedNews > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+}
+
+
+
+/* CardNews */
+.containerCardNews {
+  width: 100%;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerCardNews > img {
+  width: 100%;
+  height: 314px;
+  border: 1px solid #f7b531;
+  border-radius: 15px;
+}
+.containerCardNews > p:nth-child(2),
+.containerCardNews > p:nth-child(4) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.019em;
+  color: rgba(3, 3, 3, 0.64);
+}
+.containerCardNews > p:nth-child(3) {
+  font-family: "IM FELL Double Pica SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.019em;
+
+  color: #efcd7f;
+}
+.containerCardNews > button {
+  width: 150px;
+  height: 38px;
+  background: linear-gradient(
+    54deg,
+    #e0a23b 0%,
+    #f4ed93 18.23%,
+    #fcb045 51.16%,
+    #f4ed93 82.29%,
+    #e0a23b 99.99%,
+    #f4ed93 100%
+  );
+  box-shadow: 0px 4px 4px rgba(213, 210, 210, 0.25);
+  border-radius: 30px;
+}
+
+/* newsPage */
+.latestNews{
+  background-color: #000000;
+  height: 730px;
+}
+.latestNews > div:first-child {
+  display: flex;
+  width: 1000px;
+  justify-content: space-evenly;
+  padding: 40px 0px;
+}
+.latestNews > div:first-child>p{
+  width: 573px;
+height: 62px;
+/* left: 192px;
+top: 879px; */
+
+font-family: 'IM FELL Double Pica SC';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 68px;
+/* or 68px */
+
+letter-spacing: -0.019em;
+
+color: #EFCD7F;
+}
+.latestNews > div:first-child > select {
+  width: 284px;
+  height: 62px;
+
+  background: linear-gradient(
+    54deg,
+    #e0a23b 0%,
+    #f4ed93 18.23%,
+    #fcb045 51.16%,
+    #f4ed93 82.29%,
+    #e0a23b 99.99%,
+    #f4ed93 100%
+  );
+  box-shadow: 0px 4px 4px rgba(213, 210, 210, 0.25);
+  border-radius: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+.latestNews>div:nth-child(2){
+  margin: 0 auto;
+}
+.carousel {
+  width: 100%s
+}
+.carousel-item {
+  width: 100%;
+  height: 400px;
+}
+.questions{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.questions>img:first-child{
+  position: absolute;
+  width:100%;
+  height: 650px;
+  z-index: 0;
+}
+.questions>p:first{
+  position: absolute;
+  z-index: 2;
+}
+.questions>img:nth-child(2){
+  position: absolute;
+  top:-100px;
+}
+.questions>div>select{
+  width: 1056px;
+height:65px;
+margin-top: 20px;
+background: linear-gradient(54deg, #E0A23B 0%, #F4ED93 18.23%, #FCB045 51.16%, #F4ED93 82.29%, #E0A23B 99.99%, #F4ED93 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
